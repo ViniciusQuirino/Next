@@ -1,9 +1,15 @@
-interface Book {
-    id: number,
-    title: string,
-    description: string,
-    image_url: string,
-    page_count: number
+import { ReactNode } from "react"
+
+export interface IUserLogin {
+    email: string,
+    password: string
 }
 
-export default Book
+export interface IProviderProps {
+    children: ReactNode
+}
+
+
+export interface IUserName {
+    name: string
+}
